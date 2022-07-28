@@ -143,7 +143,7 @@ static Key keys[] = {
     {MODKEY | ShiftMask, XK_a, spawn, {.v = backupcmd}},
     {MODKEY | ShiftMask, XK_d, spawn, {.v = backdowncmd}},
     {MODKEY | ShiftMask, XK_w, spawn, {.v = tuneupcmd}},
-    {MODKEY | ShiftMask, XK_e, spawn, {.v = tunedowncmd}},
+    {MODKEY | ShiftMask, XK_s, spawn, {.v = tunedowncmd}},
     {MODKEY, XK_space, spawn, {.v = tunetogglecmd}},
 };
 

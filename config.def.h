@@ -32,17 +32,16 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	      { "Emacs",                NULL,       NULL,       1 <<  0,      0,           -1 },
-      { "Code",                 NULL,       NULL,       1 <<  1,      0,           -1 },
-      { "st",                   NULL,       NULL,       1 <<  2,      0,           -1 },
-      { "mpv",                  NULL,       NULL,       1 <<  3,      0,           -1 },
-      { "vlc",                  NULL,       NULL,       1 <<  3,      0,           -1 },
-      { "QEMU",                 NULL,       NULL,       1 <<  3,      0,           -1 },
-      { "OpenGl",               NULL,       NULL,       1 <<  3,      0,           -1 },
-      { "Wine",                 NULL,       NULL,       1 <<  3,      0,           -1 },
-      { "Steam",                NULL,       NULL,       1 <<  3,      0,           -1 },
-      { "Firefox",              NULL,       NULL,       1 <<  4,      0,           -1 },
-      { "Chromium",             NULL,       NULL,       1 <<  4,      0,           -1 },
+	{ "Emacs",                NULL,       NULL,       1 <<  0,      0,           -1 },
+	{ "Code",                 NULL,       NULL,       1 <<  0,      0,           -1 },
+	{ "Atril",                NULL,       NULL,       1 <<  1,      0,           -1 },
+	{ "st",                   NULL,       NULL,       1 <<  2,      0,           -1 },
+	{ "Alacritty",            NULL,       NULL,       1 <<  2,      0,           -1 },
+	{ "Firefox",              NULL,       NULL,       1 <<  3,      0,           -1 },
+	{ "Google-chrome",        NULL,       NULL,       1 <<  3,      0,           -1 },
+	{ "Chromium",             NULL,       NULL,       1 <<  3,      0,           -1 },
+	{ "mpv",                  NULL,       NULL,       1 <<  4,      0,           -1 },
+	{ "vlc",                  NULL,       NULL,       1 <<  4,      0,           -1 },
 };
 
 /* layout(s) */
@@ -88,7 +87,7 @@ static const char *tuneupcmd[] = { "mpc", "volume", "+3", NULL };
 static const char *tunedowncmd[] = { "mpc", "volume", "-3", NULL };
 static const char *tunetogglecmd[] = { "mpc", "toggle", NULL };
 static const char *backupcmd[] = { "s-wm-backlight", "up",  NULL };
-static const char *backdownmd[] = { "s-wm-backlight", "down" , NULL };
+static const char *backdowncmd[] = { "s-wm-backlight", "down",  NULL };
 static const char *shotfullcmd[] = { "s-wm-shot", "--full", NULL };
 static const char *shotpartialcmd[] = { "s-wm-shot", "--partial", NULL };
 

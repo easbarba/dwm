@@ -1,0 +1,10 @@
+.DS_Store
+.idea
+*.log
+tmp/
+
+config.h
+drw.o
+dwm
+dwm.o
+util.o
